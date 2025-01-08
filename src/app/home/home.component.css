@@ -1,0 +1,12 @@
+.items{
+    background-color: #1ABC9C;
+    height: 550px;
+    padding: 70px;
+
+}
+
+.line{
+    width: 200px;
+    height: 6px;
+    background-color: white;
+}

@@ -1,0 +1,77 @@
+<section>
+  <div class="title">
+    <h2 class="text-uppercase text-center">portfolio component</h2>
+    <div class="design d-flex justify-content-center align-items-center mb-2">
+      <div class="line me-2"></div>
+      <i class="fa-solid fa-star fs-2"></i>
+      <div class="line ms-2"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="item">
+        <div class="mb-3">
+          @if (username) {
+          <label for="username" class="form-label fs-3"
+            >userName: {{ username }}
+          </label>
+          }
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            placeholder="username"
+            [(ngModel)]="username"
+          />
+        </div>
+        <div class="mb-3">
+          @if (age) {
+          <label for="Your Age" class="form-label fs-3"
+            >Your Age: {{ age }}
+          </label>
+
+          }
+          <input
+            type="number"
+            class="form-control"
+            id="age"
+            placeholder="Your Age"
+            [(ngModel)]="age"
+          />
+        </div>
+        <div class="mb-3">
+          @if (useremail) {
+          <label for="Your Emali" class="form-label fs-3"
+            >Your Email: {{ useremail }}
+          </label>
+          }
+          <input
+            type="email"
+            class="form-control"
+            id="emali"
+            placeholder="Your Email"
+            [(ngModel)]="useremail"
+          />
+        </div>
+        <div class="mb-3">
+          @if (userpassword) {
+          <label for="Your password" class="form-label fs-3"
+            >Your Password:
+          </label>
+
+          }
+          <input
+            type="password"
+            class="form-control"
+            id="Your password"
+            placeholder="Password"
+            [(ngModel)]="userpassword"
+          />
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-info w-25">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

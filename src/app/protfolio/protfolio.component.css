@@ -1,0 +1,48 @@
+.title{
+    color: #2C3E50;
+}
+.line{
+    width: 100px;
+    height: 6px;
+    background-color: #2C3E50;
+}
+.item{
+    cursor: pointer;
+}
+.layer{
+    background-color:rgb(30, 188, 156 ,0.7);  
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+}
+/* .layer .show-layer{
+    opacity: 1;
+} */
+
+.fa-plus{
+    font-size: 4rem;
+}
+
+.light-page-container{
+    background-color:rgba(0, 204, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    /* opacity: 0; */
+}
+
+.light-page{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: wheat;
+    top: 20%;
+    left: 30%;
+    /* opacity: 0; */
+}
+.light-page img{
+    width: 600px;
+    height: 400px;
+}

@@ -1,0 +1,40 @@
+<section>
+  <div class="title">
+    <h2 class="text-uppercase text-center">portfolio component</h2>
+    <div class="design d-flex justify-content-center align-items-center">
+      <div class="line me-2"></div>
+      <i class="fa-solid fa-star fs-2"></i>
+      <div class="line ms-2"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      @for (image of imgList; track $index) {
+      <div class="col-md-4">
+        <div
+          class="item position-relative mb-3 mt-1"
+          (mouseover)="onHover(true, $index)"
+          (mouseout)="onHover(false, $index)"
+          (click)="onImageClick(image.imgSrc)"
+        >
+          <img [src]="image.imgSrc" alt="" class="w-100" />
+          <div
+            class="layer position-absolute fixed-top fixed-bottom d-flex justify-content-center align-items-center"
+            [style.opacity]="hoveredIndex === $index ? 1 : 0"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      @if (imageSelected) {
+        <div class="light-page-container" (click)="closeImage()"   >
+            <div class="light-page" (click)="onImageClick(image.imgSrc)">
+                <img [src]="imageSelected" alt="imageSelected">
+            </div>
+          </div>
+      }
+      }
+      
+    </div>
+  </div>
+</section>

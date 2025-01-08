@@ -1,0 +1,17 @@
+section{
+background-color: #1ABC9C;
+height: 550px;
+    padding: 70px;
+
+}
+
+
+.title{
+    color: #2C3E50;
+}
+.line{
+    width: 100px;
+    height: 6px;
+    background-color: #2C3E50;
+}
+
