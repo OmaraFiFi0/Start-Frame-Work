@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark fw-bolder ">
+  <nav class="navbar navbar-expand-lg navbar-dark fw-bolder  ">
     <a class="navbar-brand" routerLink="/home" >Start Framework</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button       (click)="toggleNavbar()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mx-auto ">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" [class] = "{'d-flex':isNavbarOpen , 'd-none':!isNavbarOpen} ">
+      <ul class="navbar-nav mx-auto mt-3 ">
         <li class="nav-item">
           <a class="nav-link" routerLink="about" routerLinkActive="bg-info rounded-4">ABOUT</a>
         </li>
@@ -14,7 +14,6 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="contact" routerLinkActive="bg-info rounded-4">CONTACT</a>
         </li>
-        
       </ul>
     </div>
   </nav>

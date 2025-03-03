@@ -1,5 +1,11 @@
 section{
     background-color: #2C3E50;
     color: white;
-    height: 200px;
+    margin-top: 20px;
+}
+
+@media screen  and (max-width:640px){
+    .items{
+        margin-top: 5px;
+    }
 }

@@ -46,3 +46,27 @@
     width: 600px;
     height: 400px;
 }
+
+@media screen and (max-width:640px) {
+    
+    .fa-plus{
+        font-size: 2rem;
+    }
+    
+    
+    
+    .light-page{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: wheat;
+        top: 40%;
+        left: 20%;
+        /* opacity: 0; */
+    }
+    .light-page img{
+        width: 250px;
+        height: 250px;
+    }
+    
+}

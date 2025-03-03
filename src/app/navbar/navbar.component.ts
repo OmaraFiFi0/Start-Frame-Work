@@ -9,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+
+
+  isNavbarOpen = false;
+
+  toggleNavbar():void {
+    this.isNavbarOpen = !this.isNavbarOpen;
+    console.log(this.isNavbarOpen)
+  }
+
 }

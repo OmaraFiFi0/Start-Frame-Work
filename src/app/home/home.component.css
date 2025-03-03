@@ -1,8 +1,7 @@
 .items{
     background-color: #1ABC9C;
-    height: 550px;
-    padding: 70px;
-
+    height: max-content;
+    padding: 50px;
 }
 
 .line{
@@ -10,3 +9,16 @@
     height: 6px;
     background-color: white;
 }
+@media screen and (max-width:640px) {
+    .line{
+        width: 100px;
+        height: 6px;
+        background-color: white;
+    }
+    .items{
+        padding: 100px 0 100px 0 ;
+    }
+    
+    
+}
+

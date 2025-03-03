@@ -10,3 +10,10 @@ section{
     background-color: #2C3E50;
 }
 
+
+@media screen and (max-width:640px) {
+    
+    .row{
+        width: 400px;
+    }
+}
